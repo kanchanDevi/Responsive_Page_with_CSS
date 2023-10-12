@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+   *{
+    overflow: auto;
+   }
+    @media screen and (max-width:576px){
+      .mobile{
+  display:block;
+  width:100%;
+  height:100%;
+}
+.desktop{
+  display:none;
+}
+.preview{
+  display: none;
+}
+
+    }
+    @media screen and (min-width:700px){
+.desktop{
+  display:block;
+  width:100%;
+}
+.preview{
+  display: none;
+}
+.mobile{
+  display: none;
+}
+
+    }
+    @media screen and (min-width:800px){
+.desktop{
+  display:none;
+}
+.preview{
+  display: block;
+}
+.mobile{
+  display: none;
+}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <img src="./design/desktop-design.jpg" class="desktop"/>
+      <img src="./design/mobile-design.jpg" class="mobile"/>
+      <img src="./design/desktop-preview.jpg" class="preview" />
+    
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kanchan Devi</a>.
+  </div>
+</body>
+</html>
